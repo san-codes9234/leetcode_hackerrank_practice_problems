@@ -4,10 +4,10 @@ class Solution:
 
         for ch in s:
             if ch == '(':
-                stack.append([])        # new layer
+                stack.append([])
             elif ch == ')':
-                top = stack.pop()[::-1] # reverse current layer
-                stack[-1].extend(top)   # merge into parent layer
+                top = stack.pop()[::-1]
+                stack[-1].extend(top)
             else:
                 stack[-1].append(ch)
 
