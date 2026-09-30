@@ -6,9 +6,9 @@ class Solution:
         for ch in seq:
             if ch == '(':
                 depth += 1
-                result.append(depth % 2)  # odd depth → group 0, even → group 1
+                result.append(depth % 2)
             else:
-                result.append(depth % 2)  # closing bracket matches its opening
+                result.append(depth % 2)
                 depth -= 1
 
         return result
