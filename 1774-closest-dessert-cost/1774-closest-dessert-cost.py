@@ -3,7 +3,6 @@ class Solution:
         self.best = float('inf')
 
         def dfs(i: int, cost: int):
-            # update best: closer to target wins; ties go to lower cost
             if abs(cost - target) < abs(self.best - target) or \
                (abs(cost - target) == abs(self.best - target) and cost < self.best):
                 self.best = cost
@@ -11,7 +10,7 @@ class Solution:
             if i == len(toppingCosts) or cost >= target:
                 return
 
-            for qty in range(3):   # 0, 1, or 2 of this topping
+            for qty in range(3):
                 dfs(i + 1, cost + qty * toppingCosts[i])
 
         for base in baseCosts:
