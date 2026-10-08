@@ -1,19 +1,17 @@
 class Solution:
     def removeOuterParentheses(self, s: str) -> str:
-        result = []
-        depth = 0
-
+        res=[]
+        count=0
         for ch in s:
-            if ch == '(':
-                if depth > 0:       # not the outermost '('
-                    result.append(ch)
-                depth += 1
+            if ch=='(':
+                if count>0:
+                    res.append(ch)
+                count+=1
             else:
-                depth -= 1
-                if depth > 0:       # not the outermost ')'
-                    result.append(ch)
-
-        return "".join(result)
+                count-=1
+                if count>0:
+                    res.append(ch)
+        return "".join(res)
 
 # Synced seamlessly with LeetHub Pro
 # Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
