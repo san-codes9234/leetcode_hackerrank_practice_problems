@@ -1,16 +1,8 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
-
-#
-# Complete the 'plusMinus' function below.
-#
-# The function accepts INTEGER_ARRAY arr as parameter.
-#
 
 def plusMinus(arr):
     n = len(arr)
@@ -34,8 +26,3 @@ if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 
     plusMinus(arr)
-
-
-# Synced seamlessly with LeetHub Pro
-# Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
-# Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
