@@ -7,9 +7,9 @@ class Solution:
         result = 0
         for i, v in enumerate(vals):
             if i < pos_count:
-                result += v * v   # positive positions
+                result += v * v
             else:
-                result -= v * v   # negative positions
+                result -= v * v
         return result
 
 # Synced seamlessly with LeetHub Pro
