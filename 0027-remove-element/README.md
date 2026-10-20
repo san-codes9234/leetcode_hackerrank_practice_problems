@@ -29,7 +29,7 @@ for (int i = 0; i &lt; actualLength; i++) {
 <p>If all assertions pass, then your solution will be <strong>accepted</strong>.</p>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p> 
 
 <pre>
 <strong>Input:</strong> nums = [3,2,2,3], val = 3
