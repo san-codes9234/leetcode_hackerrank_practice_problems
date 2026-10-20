@@ -12,9 +12,7 @@ class Solution:
 
             group = sorted_pairs[i:j]
             indices = sorted(p[0] for p in group)
-            values  = [p[1] for p in group]          # already sorted by value
-
-            # assign smallest values to smallest indices
+            values  = [p[1] for p in group]
             for idx, val in zip(indices, values):
                 result[idx] = val
 
