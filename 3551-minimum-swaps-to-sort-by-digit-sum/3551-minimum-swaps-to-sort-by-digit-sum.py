@@ -24,5 +24,5 @@ class Solution:
         return swaps
 
 # Synced seamlessly with LeetHub Pro
-# Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
+# Pro features: https://bit.ly/leethubpro | Free version: https://
 # Get it here: https://chromewebstore.google.com/detail/bcilpkkbokcopmabingnndookdogmbna
