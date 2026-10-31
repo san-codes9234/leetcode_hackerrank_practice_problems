@@ -8,7 +8,7 @@ class Solution:
         m, n = len(grid), len(grid[0])
 
         @lru_cache(maxsize=None)
-        def dest(i, j, d):  # d=0:right, d=1:down
+        def dest(i, j, d):
             if i >= m or j >= n:
                 return None
             if grid[i][j] == 0:
